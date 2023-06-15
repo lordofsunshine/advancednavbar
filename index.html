@@ -95,30 +95,6 @@
   </p>
 </main>
 <script src="script.js"></script>
-<script>
-var currentTheme = localStorage.getItem('mode');
-theme_div = document.getElementById("test_w");
-if(currentTheme) {
-	document.documentElement.setAttribute('mode', currentTheme);
-	if(currentTheme === 'light') {
-		document.documentElement.setAttribute('mode', 'dark');
-		theme_div.innerHTML = '<i onclick="switchTheme()" class="uil uil-sun" style="color:light; font-size: 40px;"></i>';
-	}
-}
-
-function switchTheme() {
-	if(currentTheme == 'light') {
-		document.documentElement.setAttribute('mode', 'dark');
-		localStorage.setItem('mode', 'dark');
-		theme_div.innerHTML = '<i onclick="switchTheme()" class="uil uil-sun" style="color:dark; font-size: 40px;"></i>';
-		currentTheme = 'dark';
-	} else {
-		document.documentElement.setAttribute('mode', 'dark');
-		localStorage.setItem('mode', 'light');
-		theme_div.innerHTML = '<i onclick="switchTheme()" class="uil uil-moon" style="color:dark; font-size: 40px;"></i>';
-		currentTheme = 'light';
-	}
-}</script>
 </body>
 
 </html>
