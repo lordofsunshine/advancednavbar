@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <meta name="viewport" content="width=device-width">
+  <title>Advanced Navbar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<header id="nav-menu" aria-label="navigation bar">
+  <div class="container">
+    <div class="nav-start">
+      <a class="logo" href="/">
+        <img src="logo.png" width="40" height="40" alt="logo" />
+      </a>
+      <nav class="menu">
+        <ul class="menu-bar">
+          <li>
+            <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+              Browse
+              <i class="bx bx-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div id="dropdown1" class="dropdown">
+              <ul role="menu">
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#best-of-the-day">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 48 48"><path fill="#42A5F5" d="M39 45H9s-3-.1-3-8h36c0 7.9-3 8-3 8z"/><path fill="#90CAF9" d="M8 3h32v34H8z"/><path fill="#1976D2" d="M18 15h16v2H18zm0 4h16v2H18zm0 4h16v2H18zm0 4h16v2H18zm0 4h16v2H18zm-4-16h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2z"/></svg>
+                    <div>
+                      <span class="dropdown-link-title">Terms of Service</span>
+                      <p>These are the rules that must be followed when you use our service</p>
+                    </div>
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#featured-streams">
+                   <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 32 32"><path fill="#c2c2c2" d="M22.038 2H6.375a1.755 1.755 0 0 0-1.75 1.75v24.5A1.755 1.755 0 0 0 6.375 30h19.25a1.755 1.755 0 0 0 1.75-1.75V6.856Zm.525 2.844l1.663 1.531h-1.663ZM6.375 28.25V3.75h14.438v4.375h4.813V28.25Z"/><path fill="#829ec2" d="M8.125 15.097h13.076v1.75H8.125zm0 9.342h9.762v1.75H8.125zm0-4.676h15.75v1.75H8.125zm0-9.533h15.75v1.75H8.125z"/></svg>
+                    <div>
+                      <span class="dropdown-link-title">Privacy Policy</span>
+                      <p>Privacy Policy is necessary to prevent disclosure, leakage of any information</p>
+                    </div>
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#subscriptions">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 48 48"><path fill="#CFD8DC" d="M41 6H7c-.6 0-1 .4-1 1v35h36V7c0-.6-.4-1-1-1z"/><path fill="#263238" d="M8 13h32v27H8z"/><path fill="#76FF03" d="M22 27.6c-.1 1.1-.4 1.9-1 2.5c-.6.6-1.4.9-2.5.9s-2-.4-2.6-1.1c-.6-.7-.9-1.8-.9-3.1v-1.6c0-1.3.3-2.4.9-3.1c.6-.7 1.5-1.1 2.6-1.1s1.9.3 2.5.9c.6.6.9 1.4 1 2.6h-2c0-.7-.1-1.2-.3-1.4c-.2-.3-.6-.4-1.1-.4c-.5 0-.9.2-1.2.6c-.2.4-.3 1-.4 1.8v1.8c0 1 .1 1.6.3 2c.2.4.6.5 1.1.5c.5 0 .9-.1 1.1-.4c.2-.3.3-.7.3-1.4H22zm2-3.6c0-.3.1-.5.3-.7c.2-.2.4-.3.7-.3c.3 0 .5.1.7.3c.2.2.3.4.3.7c0 .3-.1.5-.3.7s-.4.3-.7.3c-.3 0-.5-.1-.7-.3s-.3-.4-.3-.7zm0 6c0-.3.1-.5.3-.7c.2-.2.4-.3.7-.3c.3 0 .5.1.7.3c.2.2.3.4.3.7c0 .3-.1.5-.3.7s-.4.3-.7.3c-.3 0-.5-.1-.7-.3s-.3-.4-.3-.7zm4-9h2l3 10h-2l-3-10z"/><g fill="#90A4AE"><circle cx="13.5" cy="9.5" r="1.5"/><circle cx="9.5" cy="9.5" r="1.5"/></g></svg>
+                    <div>
+                      <span class="dropdown-link-title">Developers</span>
+                      <p>Find out who developed this website</p>
+                    </div>
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#creative-feed">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 48 48"><path fill="#FF9800" d="m24 37l-5-6v-6h10v6z"/><g fill="#FFA726"><circle cx="33" cy="19" r="2"/><circle cx="15" cy="19" r="2"/></g><path fill="#FFB74D" d="M33 13c0-7.6-18-5-18 0v7c0 5 4 9 9 9s9-4 9-9v-7z"/><path fill="#FF5722" d="M24 4c-6.1 0-10 4.9-10 11v2.3l2 1.7v-5l12-4l4 4v5l2-1.7V15c0-4-1-8-6-9l-1-2h-3z"/><g fill="#784719"><circle cx="28" cy="19" r="1"/><circle cx="20" cy="19" r="1"/></g><path fill="#CFD8DC" d="m29 31l-5 1l-5-1S8 33 8 44h32c0-11-11-13-11-13z"/><path fill="#3F51B5" d="m23 35l-1 9h4l-1-9l1-1l-2-2l-2 2z"/></svg>
+                    <div>
+                      <span class="dropdown-link-title">Dashboard</span>
+                      <p>Manage your websites using our service</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="nav-link" href="/">Career</a></li>
+          <li><a class="nav-link" href="/">Features</a></li>
+          <li><a class="nav-link" href="/">About us</a></li>
+          <li><a class="nav-link" href="/">Form</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="nav-end">
+      <div class="right-container">
+        <li style="list-style-type: none;">
+          <a class="nav-link" href="/">Register</a>
+          </li>
+        <button class="btn btn-primary">Login</button>
+      </div>
+
+      <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+        <i class="bx bx-menu" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="mobile">
+  <h1>Home</h1>
+  <p>
+  House. Sweet home...
+  </p>
+</main>
+<script src="script.js"></script>
+<script>
+var currentTheme = localStorage.getItem('mode');
+theme_div = document.getElementById("test_w");
+if(currentTheme) {
+	document.documentElement.setAttribute('mode', currentTheme);
+	if(currentTheme === 'light') {
+		document.documentElement.setAttribute('mode', 'dark');
+		theme_div.innerHTML = '<i onclick="switchTheme()" class="uil uil-sun" style="color:light; font-size: 40px;"></i>';
+	}
+}
+
+function switchTheme() {
+	if(currentTheme == 'light') {
+		document.documentElement.setAttribute('mode', 'dark');
+		localStorage.setItem('mode', 'dark');
+		theme_div.innerHTML = '<i onclick="switchTheme()" class="uil uil-sun" style="color:dark; font-size: 40px;"></i>';
+		currentTheme = 'dark';
+	} else {
+		document.documentElement.setAttribute('mode', 'dark');
+		localStorage.setItem('mode', 'light');
+		theme_div.innerHTML = '<i onclick="switchTheme()" class="uil uil-moon" style="color:dark; font-size: 40px;"></i>';
+		currentTheme = 'light';
+	}
+}</script>
+</body>
+
+</html>
